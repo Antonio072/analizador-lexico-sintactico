@@ -49,8 +49,8 @@ condicional :
             | IF '(' expr ')' stmt ELSE stmt  {printf("Estructura if/else valida\n");}
             ;
 
-stmt : declaracion ';' {printf("Estructura if valida\n");}
-      | assignment ';' {printf("Estructura if valida\n");}
+stmt : declaracion ';' 
+      | assignment ';' 
       | '{' line '}' 
       ;
 

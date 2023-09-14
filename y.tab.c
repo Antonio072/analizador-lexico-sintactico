@@ -88,7 +88,10 @@ int yylex();
 # define YYERROR_VERBOSE 0
 #endif
 
-
+/* In a future release of Bison, this section will be replaced
+   by #include "y.tab.h".  */
+#ifndef YY_YY_Y_TAB_H_INCLUDED
+# define YY_YY_Y_TAB_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -150,7 +153,7 @@ union YYSTYPE
 #line 9 "program.y" /* yacc.c:355  */
 int num; char id;
 
-#line 154 "y.tab.c" /* yacc.c:355  */
+#line 157 "y.tab.c" /* yacc.c:355  */
 };
 
 typedef union YYSTYPE YYSTYPE;
@@ -163,11 +166,11 @@ extern YYSTYPE yylval;
 
 int yyparse (void);
 
-
+#endif /* !YY_YY_Y_TAB_H_INCLUDED  */
 
 /* Copy the second part of user declarations.  */
 
-#line 171 "y.tab.c" /* yacc.c:358  */
+#line 174 "y.tab.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -1313,167 +1316,155 @@ yyreduce:
         case 2:
 #line 25 "program.y" /* yacc.c:1646  */
     {;}
-#line 1317 "y.tab.c" /* yacc.c:1646  */
+#line 1320 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 3:
 #line 26 "program.y" /* yacc.c:1646  */
     {printf("Estructura de control while valida\n");}
-#line 1323 "y.tab.c" /* yacc.c:1646  */
+#line 1326 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 4:
 #line 27 "program.y" /* yacc.c:1646  */
     {;}
-#line 1329 "y.tab.c" /* yacc.c:1646  */
+#line 1332 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 5:
 #line 28 "program.y" /* yacc.c:1646  */
     {printf("Printing \n");}
-#line 1335 "y.tab.c" /* yacc.c:1646  */
+#line 1338 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 7:
 #line 30 "program.y" /* yacc.c:1646  */
     {printf("Impresion valida \n");}
-#line 1341 "y.tab.c" /* yacc.c:1646  */
+#line 1344 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 8:
 #line 33 "program.y" /* yacc.c:1646  */
     {printf("While\n");}
-#line 1347 "y.tab.c" /* yacc.c:1646  */
+#line 1350 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 9:
 #line 34 "program.y" /* yacc.c:1646  */
     {;}
-#line 1353 "y.tab.c" /* yacc.c:1646  */
+#line 1356 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 10:
 #line 35 "program.y" /* yacc.c:1646  */
     {;}
-#line 1359 "y.tab.c" /* yacc.c:1646  */
+#line 1362 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 12:
 #line 37 "program.y" /* yacc.c:1646  */
     {printf("Impresion valida \n");}
-#line 1365 "y.tab.c" /* yacc.c:1646  */
+#line 1368 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 13:
 #line 40 "program.y" /* yacc.c:1646  */
     {;}
-#line 1371 "y.tab.c" /* yacc.c:1646  */
+#line 1374 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 14:
 #line 41 "program.y" /* yacc.c:1646  */
     {printf("Declaracion de variable valida\n");}
-#line 1377 "y.tab.c" /* yacc.c:1646  */
+#line 1380 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 15:
 #line 42 "program.y" /* yacc.c:1646  */
     {printf("Declaracion y asignacion de variable valida\n");}
-#line 1383 "y.tab.c" /* yacc.c:1646  */
+#line 1386 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 16:
 #line 43 "program.y" /* yacc.c:1646  */
     {printf("Declaracion y asignacion de variable valida\n");}
-#line 1389 "y.tab.c" /* yacc.c:1646  */
+#line 1392 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 17:
 #line 44 "program.y" /* yacc.c:1646  */
     {printf("\rDeclaracion de varias variables\n");}
-#line 1395 "y.tab.c" /* yacc.c:1646  */
+#line 1398 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 18:
 #line 48 "program.y" /* yacc.c:1646  */
     {;}
-#line 1401 "y.tab.c" /* yacc.c:1646  */
+#line 1404 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 19:
 #line 49 "program.y" /* yacc.c:1646  */
     {printf("Estructura if/else valida\n");}
-#line 1407 "y.tab.c" /* yacc.c:1646  */
-    break;
-
-  case 20:
-#line 52 "program.y" /* yacc.c:1646  */
-    {printf("Estructura if valida\n");}
-#line 1413 "y.tab.c" /* yacc.c:1646  */
-    break;
-
-  case 21:
-#line 53 "program.y" /* yacc.c:1646  */
-    {printf("Estructura if valida\n");}
-#line 1419 "y.tab.c" /* yacc.c:1646  */
+#line 1410 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 23:
 #line 57 "program.y" /* yacc.c:1646  */
     { printf("Asignacion de valor a variable\n"); }
-#line 1425 "y.tab.c" /* yacc.c:1646  */
+#line 1416 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 24:
 #line 58 "program.y" /* yacc.c:1646  */
     {printf("String valida\n");}
-#line 1431 "y.tab.c" /* yacc.c:1646  */
+#line 1422 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 25:
 #line 59 "program.y" /* yacc.c:1646  */
     { printf("Incremento valido\n\n");}
-#line 1437 "y.tab.c" /* yacc.c:1646  */
+#line 1428 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 26:
 #line 60 "program.y" /* yacc.c:1646  */
     { printf("Decremento valido\n\n");}
-#line 1443 "y.tab.c" /* yacc.c:1646  */
+#line 1434 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 27:
 #line 61 "program.y" /* yacc.c:1646  */
     { printf("Incremento valido\n\n");}
-#line 1449 "y.tab.c" /* yacc.c:1646  */
+#line 1440 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 28:
 #line 62 "program.y" /* yacc.c:1646  */
     { printf("Decremento valido\n\n");}
-#line 1455 "y.tab.c" /* yacc.c:1646  */
+#line 1446 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 29:
 #line 65 "program.y" /* yacc.c:1646  */
     {;}
-#line 1461 "y.tab.c" /* yacc.c:1646  */
+#line 1452 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 31:
 #line 69 "program.y" /* yacc.c:1646  */
     {;}
-#line 1467 "y.tab.c" /* yacc.c:1646  */
+#line 1458 "y.tab.c" /* yacc.c:1646  */
     break;
 
   case 32:
 #line 70 "program.y" /* yacc.c:1646  */
     {;}
-#line 1473 "y.tab.c" /* yacc.c:1646  */
+#line 1464 "y.tab.c" /* yacc.c:1646  */
     break;
 
 
-#line 1477 "y.tab.c" /* yacc.c:1646  */
+#line 1468 "y.tab.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
